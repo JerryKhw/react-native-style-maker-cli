@@ -1,13 +1,12 @@
-oclif-hello-world
+react-native-style-maker-cli
 =================
 
-oclif example Hello World CLI
+react native style maker cli
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
-[![CircleCI](https://circleci.com/gh/oclif/hello-world/tree/main.svg?style=shield)](https://circleci.com/gh/oclif/hello-world/tree/main)
-[![Downloads/week](https://img.shields.io/npm/dw/oclif-hello-world.svg)](https://npmjs.org/package/oclif-hello-world)
-[![License](https://img.shields.io/npm/l/oclif-hello-world.svg)](https://github.com/oclif/hello-world/blob/main/package.json)
+[![Version](https://img.shields.io/npm/v/react-native-style-maker-cli.svg)](https://npmjs.org/package/react-native-style-maker-cli)
+[![Downloads/week](https://img.shields.io/npm/dw/react-native-style-maker-cli.svg)](https://npmjs.org/package/react-native-style-maker-cli)
+[![License](https://img.shields.io/npm/l/react-native-style-maker-cli.svg)](https://github.com/hwJames/react-native-style-maker-cli/blob/main/package.json)
 
 <!-- toc -->
 * [Usage](#usage)
@@ -20,7 +19,7 @@ $ npm install -g react-native-style-maker-cli
 $ style-maker COMMAND
 running command...
 $ style-maker (--version)
-react-native-style-maker-cli/0.0.0 darwin-x64 node-v16.14.2
+react-native-style-maker-cli/0.0.1 darwin-x64 node-v16.14.2
 $ style-maker --help [COMMAND]
 USAGE
   $ style-maker COMMAND
@@ -29,9 +28,9 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`style-maker hello PERSON`](#style-maker-hello-person)
-* [`style-maker hello world`](#style-maker-hello-world)
+* [`style-maker create`](#style-maker-create)
 * [`style-maker help [COMMAND]`](#style-maker-help-command)
+* [`style-maker init`](#style-maker-init)
 * [`style-maker plugins`](#style-maker-plugins)
 * [`style-maker plugins:install PLUGIN...`](#style-maker-pluginsinstall-plugin)
 * [`style-maker plugins:inspect PLUGIN...`](#style-maker-pluginsinspect-plugin)
@@ -42,45 +41,19 @@ USAGE
 * [`style-maker plugins:uninstall PLUGIN...`](#style-maker-pluginsuninstall-plugin-2)
 * [`style-maker plugins update`](#style-maker-plugins-update)
 
-## `style-maker hello PERSON`
+## `style-maker create`
 
-Say hello
-
-```
-USAGE
-  $ style-maker hello [PERSON] -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Whom is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ oex hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [dist/commands/hello/index.ts](https://github.com/hwJames/hello-world/blob/v0.0.0/dist/commands/hello/index.ts)_
-
-## `style-maker hello world`
-
-Say hello world
+Create style file
 
 ```
 USAGE
-  $ style-maker hello world
+  $ style-maker create
 
 DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ oex hello world
-  hello world! (./src/commands/hello/world.ts)
+  Create style file
 ```
+
+_See code: [dist/commands/create/index.ts](https://github.com/hwJames/react-native-style-maker-cli/blob/v0.0.1/dist/commands/create/index.ts)_
 
 ## `style-maker help [COMMAND]`
 
@@ -100,7 +73,21 @@ DESCRIPTION
   Display help for style-maker.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.10/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
+
+## `style-maker init`
+
+Make config file. (style-maker.config.js)
+
+```
+USAGE
+  $ style-maker init
+
+DESCRIPTION
+  Make config file. (style-maker.config.js)
+```
+
+_See code: [dist/commands/init/index.ts](https://github.com/hwJames/react-native-style-maker-cli/blob/v0.0.1/dist/commands/init/index.ts)_
 
 ## `style-maker plugins`
 
@@ -120,7 +107,7 @@ EXAMPLES
   $ style-maker plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.0.11/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.1.0/src/commands/plugins/index.ts)_
 
 ## `style-maker plugins:install PLUGIN...`
 
