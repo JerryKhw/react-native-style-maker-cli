@@ -19,7 +19,7 @@ $ npm install -g react-native-style-maker-cli
 $ style-maker COMMAND
 running command...
 $ style-maker (--version)
-react-native-style-maker-cli/0.0.2 darwin-x64 node-v16.14.2
+react-native-style-maker-cli/0.0.3 darwin-x64 node-v16.14.2
 $ style-maker --help [COMMAND]
 USAGE
   $ style-maker COMMAND
@@ -53,7 +53,7 @@ DESCRIPTION
   Create style file
 ```
 
-_See code: [dist/commands/create/index.ts](https://github.com/hwJames/react-native-style-maker-cli/blob/v0.0.2/dist/commands/create/index.ts)_
+_See code: [dist/commands/create/index.ts](https://github.com/hwJames/react-native-style-maker-cli/blob/v0.0.3/dist/commands/create/index.ts)_
 
 ## `style-maker help [COMMAND]`
 
@@ -87,7 +87,7 @@ DESCRIPTION
   Make config file. (style-maker.config.js)
 ```
 
-_See code: [dist/commands/init/index.ts](https://github.com/hwJames/react-native-style-maker-cli/blob/v0.0.2/dist/commands/init/index.ts)_
+_See code: [dist/commands/init/index.ts](https://github.com/hwJames/react-native-style-maker-cli/blob/v0.0.3/dist/commands/init/index.ts)_
 
 ## `style-maker plugins`
 
