@@ -1,6 +1,6 @@
 {
   "name": "react-native-style-maker-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react native style maker cli",
   "author": "KJH @hwJames",
   "bin": {
